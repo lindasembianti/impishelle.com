@@ -1,0 +1,128 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: A plain-vanilla &amp; lightweight theme for Elementor page builder
+Tags: flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 2.5.0.1653814726
+Updated: 2022-05-29 09:58:46
+
+*/
+
+
+.home #logo_header_home {
+    visibility: hidden;
+}
+
+
+/* import custom font */
+
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+/* apply custom font to heading2 */
+
+.elementor-75 .elementor-element.elementor-element-d984080, .elementor-75 .elementor-element.elementor-element-9c474a5, .elementor-75 .elementor-element.elementor-element-e4aff50 .elementor-heading-title, .elementor-75 .elementor-element.elementor-element-9f3bbb3 .elementor-heading-title, .elementor-75 .elementor-element.elementor-element-ee0ad84, .elementor-75 .elementor-element.elementor-element-9a65cda .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-27cde591, .elementor-403 .elementor-element.elementor-element-7376df4, .elementor-416 .elementor-element.elementor-element-71f37fa {
+    font-family: 'Cocogoose', sans-serif !important;
+}
+
+/* editing font and weight to talent headings */
+
+.elementor-75 .elementor-element.elementor-element-47a8857 .elementor-heading-title, .elementor-75 .elementor-element.elementor-element-77eecf8 .elementor-heading-title,
+.elementor-75 .elementor-element.elementor-element-3ff54a2 .elementor-heading-title,
+.elementor-75 .elementor-element.elementor-element-2153f53 .elementor-heading-title, .elementor-75 .elementor-element.elementor-element-63ee1dd .elementor-heading-title, .elementor-75 .elementor-element.elementor-element-dd0ba79 .elementor-heading-title {
+    font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100;
+}
+
+/* editing elementor heading style */
+
+
+.elementor-421 .elementor-element.elementor-element-6b34002b .elementor-heading-title, .elementor-403 .elementor-element.elementor-element-36cd97e .elementor-heading-title, .elementor-416 .elementor-element.elementor-element-4147aaa .elementor-heading-title, .elementor-560 .elementor-element.elementor-element-29bd6384 .elementor-heading-title {
+    font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100; 
+}
+
+/* talent page edits */
+
+.elementor-421 .elementor-element.elementor-element-431d856e .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-e725684 .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-5a0e9878 .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-61719752 .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-237ca7f .elementor-heading-title, .elementor-421 .elementor-element.elementor-element-13edd6ab .elementor-heading-title {
+    font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100;
+}
+
+/* blog page edits */
+
+.elementor-403 .elementor-element.elementor-element-8b7361c .elementor-post__title, .elementor-403 .elementor-element.elementor-element-8b7361c .elementor-post__title a {
+    font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100;
+}
+
+/* works page edits */
+
+.elementor-447 .elementor-element.elementor-element-a7cb07e .elementor-heading-title {
+    font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100;
+}
+
+/* about page edits */
+
+.elementor-416 .elementor-element.elementor-element-4147aaa .elementor-heading-title {
+font-family: 'Cocogoose', sans-serif !important;
+    font-weight: 100;
+}
+
+.elementor-416 .elementor-element.elementor-element-585b8e4 .elementor-heading-title, .elementor-416 .elementor-element.elementor-element-ae37c8c .elementor-heading-title, .elementor-416 .elementor-element.elementor-element-3f5d570 .elementor-heading-title {
+    font-family: 'Cocogoose', Sans-serif !important;
+    font-weight: 100;
+}
+
+/* animation on sliding scrolling text */
+
+body{
+    --speed: 10s;
+}
+.sliding-text .elementor-widget-wrap{
+    display: block !important;
+}
+.sliding-text .elementor-widget{
+    overflow: hidden;
+    width: 10000vw !important;
+    max-width: 10000vw !important;
+}
+.sliding-text .sliding .elementor-widget-container{
+    -webkit-animation: sliding var(--speed) linear infinite;
+    -moz-animation: sliding var(--speed) linear infinite;
+    -o-animation: sliding var(--speed) linear infinite;
+    animation: sliding var(--speed) linear infinite;
+}
+.sliding-text .elementor-widget-container{
+    float: left;
+}
+.sliding-text.reverse .elementor-widget-wrap{
+    transform: rotate(180deg);
+}
+.sliding-text.reverse .sliding .elementor-heading-title{
+    transform: scale(-1, -1);
+}
+@keyframe sliding{
+0%{ transform: translateX(0); }
+100%{ transform: translateX(-100%); }
+}
+@-webkit-keyframes sliding {
+0%{ transform: translateX(0); }
+100%{ transform: translateX(-100%); }
+}
+@-moz-keyframes sliding {
+0%{ transform: translateX(0); }
+100%{ transform: translateX(-100%); }
+}
+@-o-keyframes sliding {
+0%{ transform: translateX(0); }
+100%{ transform: translateX(-100%); }
+}
+@keyframes sliding {
+0%{ transform: translateX(0); }
+100%{ transform: translateX(-100%); }
+}
+
